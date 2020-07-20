@@ -37,3 +37,15 @@ body {
 .navbar-dark {
   background-color: #512da8;
 }
+
+.card-header {
+  background-color: rgb(245, 183, 67);
+}
+
+.btn-block {
+  background-color: rgb(245, 183, 67);
+}
+
+html {
+  scroll-behavior: smooth;
+}
