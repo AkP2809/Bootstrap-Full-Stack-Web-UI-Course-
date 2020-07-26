@@ -38,10 +38,6 @@ body {
   background-color: #512da8;
 }
 
-.card-header {
-  background-color: rgb(245, 183, 67);
-}
-
 .btn-block {
   background-color: rgb(245, 183, 67);
 }
@@ -63,4 +59,12 @@ html {
   top: 0;
   left: 0;
   min-height: 300px;
+}
+
+.modal-header {
+  color: black;
+}
+
+.modal-body {
+  color: black;
 }
