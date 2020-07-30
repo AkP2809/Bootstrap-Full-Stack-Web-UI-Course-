@@ -441,8 +441,11 @@
 
     <script>
       $(document).ready(function(){
+
+          //setting the speed of carousel to 2 seconds
           $("#mycarousel").carousel({ interval: 2000 });
 
+          //managing the pause-play functionality of carousel with one button
           $("#carouselButton").click(function(){
               
             if( $('#carouselButton').children('span').hasClass('fa-pause') ){
@@ -458,26 +461,32 @@
 
           });
 
+        //opening of loginModal on click of login button
         $('#loginBtn').click(function() {
           $('#loginModal').modal('show');
         });
 
+        //closing of loginModal on click of 'X' button
         $('#loginCrossBtn').click(function() {
           $('#loginModal').modal('hide');
         });
 
+        //closing of loginModal on click of Cancel button
         $('#loginCancelBtn').click(function() {
           $('#loginModal').modal('hide');
         });
 
+        //opening of reserveModal on click of Reserve Table button
         $('#reserveBtn').click(function() {
           $('#reserveModal').modal('show');
         });
 
+        //closing of reserveModal on click of 'X' button
         $('#reserveCrossBtn').click(function() {
           $('#reserveModal').modal('hide');
         });
 
+        //closing of reserveModal on click of Cancel button
         $('#reserveCancelBtn').click(function() {
           $('#reserveModal').modal('hide');
         });
