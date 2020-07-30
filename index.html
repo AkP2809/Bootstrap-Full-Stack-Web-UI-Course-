@@ -74,7 +74,7 @@
           </ul>
 
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
+            <a type="button" id="loginBtn">
               <span class="fa fa-sign-in"></span>
               Login
             </a>
@@ -88,7 +88,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Login</h4>
-            <button type="button" class="close" data-dismiss="modal">
+            <button type="button" class="close" id="loginCrossBtn">
               &times;
             </button>
           </div>
@@ -112,7 +112,7 @@
                   </div>
               </div>
               <div class="form-row">
-                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" id="loginCancelBtn">Cancel</button>
                   <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
               </div>
             </form>
@@ -138,8 +138,7 @@
           </div>
           
           <div class="col-12 col-sm-3 text-center align-self-center">
-            <a type="button" class="btn btn-warning btn-block nav-link"
-              data-toggle="modal" data-target="#reserveModal">
+            <a type="button" class="btn btn-warning btn-block nav-link" id="reserveBtn">
                 Reserve Table
             </a>
           </div>
@@ -149,7 +148,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h4 class="modal-title">Reserve a Table</h4>
-                  <button type="button" class="close" data-dismiss="modal">
+                  <button type="button" class="close" id="reserveCrossBtn">
                     &times;
                   </button>
                 </div>
@@ -215,7 +214,7 @@
     
                     <div class="form-group row">
                       <div class="col-sm-10 offset-sm-2">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <button type="button" class="btn btn-secondary" id="reserveCancelBtn">
                           Cancel
                         </button>
 
@@ -458,6 +457,31 @@
             }
 
           });
+
+        $('#loginBtn').click(function() {
+          $('#loginModal').modal('show');
+        });
+
+        $('#loginCrossBtn').click(function() {
+          $('#loginModal').modal('hide');
+        });
+
+        $('#loginCancelBtn').click(function() {
+          $('#loginModal').modal('hide');
+        });
+
+        $('#reserveBtn').click(function() {
+          $('#reserveModal').modal('show');
+        });
+
+        $('#reserveCrossBtn').click(function() {
+          $('#reserveModal').modal('hide');
+        });
+
+        $('#reserveCancelBtn').click(function() {
+          $('#reserveModal').modal('hide');
+        });
+        
       });
   </script>
   </body>
